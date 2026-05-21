@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AUI Summer School — Industry 4.0 & Smart Manufacturing 2026</title>
+<title>AUI Summer School - Industry 4.0 & Smart Manufacturing 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -117,8 +118,6 @@ nav {
   animation: fadeUp 0.6s 0.1s ease both;
 }
 
-/* 4.0 = bright cream/yellow so it pops on the dark-green hero;
-   Manufacturing = brand gold (slightly different tone, kept for hierarchy) */
 .hero h1 .hi { color: #FFD166; }
 .hero h1 .hy { color: var(--accent2); }
 
@@ -141,7 +140,6 @@ nav {
   animation: fadeUp 0.6s 0.3s ease both;
 }
 
-/* Primary: white background pops on green hero; dark green text for legibility */
 .btn-primary {
   background: #ffffff; color: var(--darker);
   font-family: 'IBM Plex Sans', sans-serif;
@@ -152,7 +150,6 @@ nav {
 }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 36px rgba(0,0,0,0.25); }
 
-/* Outline: white text & translucent white border for visibility on green hero */
 .btn-outline {
   border: 1px solid rgba(255,255,255,0.4);
   color: #ffffff; font-size: 15px; font-weight: 500;
@@ -475,7 +472,7 @@ footer strong { color: #ffffff; }
   .nav-logo span { font-size: 12px !important; }
   .nav-cta { padding: 8px 16px; font-size: 12px; }
 
-  /* Hero — flow partners below content instead of absolute pinning */
+  /* Hero - flow partners below content instead of absolute pinning */
   .hero {
     min-height: auto;
     padding: 90px 20px 32px;
@@ -534,7 +531,7 @@ footer strong { color: #ffffff; }
   .day-header { padding: 18px 18px; gap: 14px; }
   .day-content { padding: 0 18px 22px; }
 
-  /* MS Forms iframe — taller on mobile to avoid scroll-in-scroll */
+  /* MS Forms iframe - taller on mobile to avoid scroll-in-scroll */
   .ms-form-iframe { height: 1800px; }
 
   /* Footer */
@@ -555,7 +552,6 @@ footer strong { color: #ffffff; }
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo" style="display:flex;align-items:center;gap:14px;">
     <img src="data:image/png;base64,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" alt="Al Akhawayn University" style="height:44px;width:auto;object-fit:contain;">
@@ -570,7 +566,6 @@ footer strong { color: #ffffff; }
   <a href="#register" class="nav-cta">Register Now</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-grid-bg"></div>
   <div class="hero-glow"></div>
@@ -578,7 +573,7 @@ footer strong { color: #ffffff; }
   <span class="hero-tag">Al Akhawayn University in Ifrane · School of Science & Engineering</span>
   <h1>Industry <span class="hi">4.0</span> &<br>Smart <span class="hy">Manufacturing</span></h1>
   <p class="hero-sub">A 3-day intensive summer school combining theoretical foundations with hands-on industrial hardware. Delivered by 7 global industry leaders operating in Morocco.</p>
-  <p class="hero-date">📅 June 15 – 17, 2026 · Ifrane, Morocco</p>
+  <p class="hero-date">📅 June 8 - 10, 2026 · Ifrane, Morocco</p>
   <div class="hero-btns">
     <a href="#register" class="btn-primary">Register now</a>
     <a href="#program" class="btn-outline">View program</a>
@@ -589,10 +584,10 @@ footer strong { color: #ffffff; }
     <span class="partner-tag">Deutsche Messe Technology Academy</span>
     <span class="partner-tag">Smart Factory Academy Casablanca</span>
     <span class="partner-tag">AUI Innovation Club</span>
+    <span class="partner-tag">Undergraduate Research Program</span>
   </div>
 </section>
 
-<!-- STATS -->
 <div class="stats-bar">
   <div class="stat-cell"><span class="stat-num">3</span><span class="stat-label">Full Days</span></div>
   <div class="stat-cell"><span class="stat-num">6</span><span class="stat-label">Sessions</span></div>
@@ -600,11 +595,10 @@ footer strong { color: #ffffff; }
   <div class="stat-cell"><span class="stat-num">18h</span><span class="stat-label">Total Learning</span></div>
 </div>
 
-<!-- OVERVIEW + AUDIENCE -->
 <section class="section">
   <p class="section-tag">Program overview</p>
   <h2 class="section-title">Who should attend?</h2>
-  <p class="section-sub">This intensive program is designed for anyone looking to bridge academia and industrial practice — from students to seasoned professionals.</p>
+  <p class="section-sub">This intensive program is designed for anyone looking to bridge academia and industrial practice - from students to seasoned professionals.</p>
   <div class="audience-grid">
     <div class="audience-card">
       <div class="audience-icon">🎓</div>
@@ -631,15 +625,13 @@ footer strong { color: #ffffff; }
   </div>
 </section>
 
-<!-- PROGRAM DAYS -->
 <section class="section" id="program" style="padding-top:0;">
   <p class="section-tag">3-Day curriculum</p>
   <h2 class="section-title">Program schedule</h2>
-  <p class="section-sub">Each session is 3 hours of structured learning — concept introduction, live industrial demo, hands-on exercises, and Q&A.</p>
+  <p class="section-sub">Each session is 3 hours of structured learning - concept introduction, live industrial demo, hands-on exercises, and Q&A.</p>
 
   <div class="days-container">
 
-    <!-- DAY 1 -->
     <div class="day-block open">
       <div class="day-header" onclick="toggleDay(this)">
         <span class="day-number">Day 1</span>
@@ -681,7 +673,6 @@ footer strong { color: #ffffff; }
       </div>
     </div>
 
-    <!-- DAY 2 -->
     <div class="day-block">
       <div class="day-header" onclick="toggleDay(this)">
         <span class="day-number">Day 2</span>
@@ -723,7 +714,6 @@ footer strong { color: #ffffff; }
       </div>
     </div>
 
-    <!-- DAY 3 -->
     <div class="day-block">
       <div class="day-header" onclick="toggleDay(this)">
         <span class="day-number">Day 3</span>
@@ -767,7 +757,6 @@ footer strong { color: #ffffff; }
 
   </div>
 
-  <!-- FIELD TRIP -->
   <div class="trip-card">
     <div>
       <p class="section-tag" style="margin-bottom:10px;">Bonus</p>
@@ -784,7 +773,7 @@ footer strong { color: #ffffff; }
       <div class="trip-schedule">
         <div class="trip-row"><span class="trip-time">07:30</span><span class="trip-desc">Departure from AUI by shuttle bus</span></div>
         <div class="trip-row"><span class="trip-time">09:00</span><span class="trip-desc">Arrival, welcome and safety briefing</span></div>
-        <div class="trip-row"><span class="trip-time">09:30</span><span class="trip-desc">Guided plant tour — production lines, automation cells</span></div>
+        <div class="trip-row"><span class="trip-time">09:30</span><span class="trip-desc">Guided plant tour - production lines, automation cells</span></div>
         <div class="trip-row"><span class="trip-time">11:00</span><span class="trip-desc">Technical Q&A with plant engineers</span></div>
         <div class="trip-row"><span class="trip-time">12:00</span><span class="trip-desc">Lunch on-site (hosted by facility)</span></div>
         <div class="trip-row"><span class="trip-time">13:00</span><span class="trip-desc">Group debrief and reflection</span></div>
@@ -794,14 +783,13 @@ footer strong { color: #ffffff; }
   </div>
 </section>
 
-<!-- PARTNERS -->
 <section class="section" id="partners" style="padding-top:0;">
   <p class="section-tag">Industry partners</p>
   <h2 class="section-title">7 global leaders.<br>Live hardware.</h2>
-  <p class="section-sub">Partners bring actual robots, sensors, and systems — not slides — for genuine hands-on practice in a Moroccan industrial context.</p>
+  <p class="section-sub">Partners bring actual robots, sensors, and systems - not slides - for genuine hands-on practice in a Moroccan industrial context.</p>
   <div class="partners-grid">
     <div class="partner-card"><h4>Metronelec</h4><p>Automation & robotics integration for Moroccan industry</p></div>
-    <div class="partner-card"><h4>MiR</h4><p>Mobile Industrial Robots — AMR solutions</p></div>
+    <div class="partner-card"><h4>MiR</h4><p>Mobile Industrial Robots - AMR solutions</p></div>
     <div class="partner-card"><h4>Universal Robots</h4><p>Collaborative robot (cobot) platforms</p></div>
     <div class="partner-card"><h4>Evocon</h4><p>IIoT & MES production monitoring systems</p></div>
     <div class="partner-card"><h4>ifm electronic</h4><p>Smart sensors and IO-Link technology</p></div>
@@ -810,7 +798,6 @@ footer strong { color: #ffffff; }
   </div>
 </section>
 
-<!-- OUTCOMES -->
 <section class="section" id="outcomes" style="padding-top:0;">
   <p class="section-tag">Learning outcomes</p>
   <h2 class="section-title">What you'll walk<br>away with</h2>
@@ -825,16 +812,14 @@ footer strong { color: #ffffff; }
   </div>
 </section>
 
-<!-- REGISTRATION FORM -->
 <div class="register-section" id="register">
   <div class="form-container">
     <div class="form-header">
       <p class="section-tag">Enrollment</p>
       <h2 class="section-title" style="color:#1a3a25">Register for the<br>Summer School</h2>
-      <p class="section-sub">Secure your spot for June 15–17, 2026 at Al Akhawayn University. Limited seats available.</p>
+      <p class="section-sub">Secure your spot for June 8-10, 2026 at Al Akhawayn University. Limited to 30 spots.</p>
     </div>
 
-    <!-- Microsoft Forms embed — edits made in Forms appear here live; no HTML change needed. -->
     <div class="ms-form-wrap">
       <iframe
         class="ms-form-iframe"
@@ -852,12 +837,11 @@ footer strong { color: #ffffff; }
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <strong>Al Akhawayn University in Ifrane</strong> · School of Science & Engineering<br>
-  Avenue Hassan II, Ifrane 53000, Morocco &nbsp;·&nbsp; summerschool@aui.ma &nbsp;·&nbsp; +212 535 862 000
+  Avenue Hassan II, Ifrane 53000, Morocco &nbsp;·&nbsp; Mr. Rachid Lghoul (r.lghoul@aui.ma) &nbsp;·&nbsp; +212-662-411-422
   <br><br>
-  <span style="font-size:11px;">In collaboration with Deutsche Messe Technology Academy · Smart Factory Academy Casablanca · AUI Innovation Club</span>
+  <span style="font-size:11px;">In collaboration with Deutsche Messe Technology Academy · Smart Factory Academy Casablanca · AUI Innovation Club · Undergraduate Research Program</span>
 </footer>
 
 <script>
