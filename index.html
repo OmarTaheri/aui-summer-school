@@ -177,6 +177,18 @@ nav {
   font-weight: 500;
 }
 
+.organizer-logo {
+  height: 36px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.organizer-logo:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+
 @keyframes fadeUp {
   from { opacity:0; transform:translateY(20px); }
   to   { opacity:1; transform:translateY(0); }
@@ -306,6 +318,16 @@ nav {
 .partner-card:hover { border-color: rgba(0,102,51,0.35); background: #e8f4ee; }
 .partner-card h4 { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: #1a3a25; margin-bottom: 6px; }
 .partner-card p { font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+.partner-logo {
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
 
 /* ─── OUTCOMES ─── */
 .outcomes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -788,13 +810,34 @@ footer strong { color: #ffffff; }
   <h2 class="section-title">7 global leaders.<br>Live hardware.</h2>
   <p class="section-sub">Partners bring actual robots, sensors, and systems - not slides - for genuine hands-on practice in a Moroccan industrial context.</p>
   <div class="partners-grid">
-    <div class="partner-card"><h4>Metronelec</h4><p>Automation & robotics integration for Moroccan industry</p></div>
-    <div class="partner-card"><h4>MiR</h4><p>Mobile Industrial Robots - AMR solutions</p></div>
-    <div class="partner-card"><h4>Universal Robots</h4><p>Collaborative robot (cobot) platforms</p></div>
-    <div class="partner-card"><h4>Evocon</h4><p>IIoT & MES production monitoring systems</p></div>
-    <div class="partner-card"><h4>ifm electronic</h4><p>Smart sensors and IO-Link technology</p></div>
-    <div class="partner-card"><h4>igus</h4><p>Smart motion plastics & low-cost automation</p></div>
-    <div class="partner-card"><h4>INCIT</h4><p>SIRI assessment framework & Industry 4.0 strategy</p></div>
+    <div class="partner-card">
+      <img src="logos/metronelec.png" alt="Metronelec" class="partner-logo">
+      <h4>Metronelec</h4><p>Automation & robotics integration for Moroccan industry</p>
+    </div>
+    <div class="partner-card">
+      <img src="logos/mir.webp" alt="MiR" class="partner-logo">
+      <h4>MiR</h4><p>Mobile Industrial Robots - AMR solutions</p>
+    </div>
+    <div class="partner-card">
+      <img src="logos/universal-robots.png" alt="Universal Robots" class="partner-logo">
+      <h4>Universal Robots</h4><p>Collaborative robot (cobot) platforms</p>
+    </div>
+    <div class="partner-card">
+      <img src="logos/evocon.webp" alt="Evocon" class="partner-logo">
+      <h4>Evocon</h4><p>IIoT & MES production monitoring systems</p>
+    </div>
+    <div class="partner-card">
+      <img src="logos/ifm.png" alt="ifm electronic" class="partner-logo">
+      <h4>ifm electronic</h4><p>Smart sensors and IO-Link technology</p>
+    </div>
+    <div class="partner-card">
+      <img src="logos/igus.png" alt="igus" class="partner-logo">
+      <h4>igus</h4><p>Smart motion plastics & low-cost automation</p>
+    </div>
+    <div class="partner-card">
+      <img src="logos/incit.png" alt="INCIT" class="partner-logo">
+      <h4>INCIT</h4><p>SIRI assessment framework & Industry 4.0 strategy</p>
+    </div>
   </div>
 </section>
 
