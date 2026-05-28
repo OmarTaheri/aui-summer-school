@@ -161,7 +161,7 @@ nav {
 .hero-partners {
   position: absolute; bottom: 40px; left: 48px; right: 48px;
   display: flex; align-items: center; gap: 24px;
-  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 24px;
   animation: fadeUp 0.6s 0.4s ease both;
   flex-wrap: wrap;
 }
@@ -287,18 +287,20 @@ nav {
 }
 .session-by { font-size: 12px; color: var(--muted); font-style: italic; }
 .session h4 { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: #1a3a25; margin-bottom: 14px; }
-.session ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
-.session ul li {
+.session ul, .workshop-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.session ul li, .workshop-list li {
   font-size: 14px; color: var(--muted); padding-left: 20px; position: relative; line-height: 1.5;
 }
-.session ul li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 11px; top: 2px; }
+.session ul li::before, .workshop-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 11px; top: 2px; }
 
 /* ─── FIELD TRIP ─── */
-.trip-card {
-  background: #f4f9f6; border: 1px solid rgba(212,160,23,0.25);
+.trip-card, .workshop-card {
+  background: #f4f9f6;
   border-radius: 16px; padding: 40px; margin-top: 40px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
 }
+.trip-card { border: 1px solid rgba(212,160,23,0.25); }
+.workshop-card { border: 1px solid rgba(0,102,51,0.25); }
 .trip-title { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: #1a3a25; margin-bottom: 12px; }
 .trip-sub { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 24px; font-weight: 300; }
 .trip-schedule { display: flex; flex-direction: column; gap: 12px; }
@@ -543,7 +545,7 @@ footer strong { color: #ffffff; }
   .audience-grid { grid-template-columns: 1fr; }
   .outcomes-grid { grid-template-columns: 1fr; }
   .partners-grid { grid-template-columns: 1fr; }
-  .trip-card { grid-template-columns: 1fr; gap: 20px; padding: 24px; }
+  .trip-card, .workshop-card { grid-template-columns: 1fr; gap: 20px; padding: 24px; }
   .form-row { grid-template-columns: 1fr; }
   .sessions-grid { grid-template-columns: 1fr; }
   .form-container { padding: 0 20px; }
@@ -665,32 +667,46 @@ footer strong { color: #ffffff; }
       </div>
       <div class="day-sessions">
         <div class="session">
-          <div class="session-meta">
-            <span class="session-tag">Session 1 · 3 hours</span>
-            <span class="session-by">Delivered by: Metronelec · MiR · Universal Robots</span>
+          <div style="display: flex; gap: 32px; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; min-width: 300px;">
+              <div class="session-meta">
+                <span class="session-tag">Session 1 · 3 hours</span>
+                <span class="session-by">Delivered by: Metronelec · MiR · Universal Robots</span>
+              </div>
+              <h4>Robots and AGV/AMR in Factories</h4>
+              <ul>
+                <li>Introduction to industrial robotics and automation</li>
+                <li>Collaborative robots (cobots), applications and programming</li>
+                <li>AGV vs AMR: concepts, differences, and use cases</li>
+                <li>Live demo: robot programming and mobile robot navigation</li>
+                <li>Use cases and deployments in Moroccan industry</li>
+              </ul>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+              <img src="images/metronelec.jpeg" alt="Metronelec Robots and AGV" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(0,102,51,0.15);box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+            </div>
           </div>
-          <h4>Robots and AGV/AMR in Factories</h4>
-          <ul>
-            <li>Introduction to industrial robotics and automation</li>
-            <li>Collaborative robots (cobots), applications and programming</li>
-            <li>AGV vs AMR: concepts, differences, and use cases</li>
-            <li>Live demo: robot programming and mobile robot navigation</li>
-            <li>Use cases and deployments in Moroccan industry</li>
-          </ul>
         </div>
         <div class="session">
-          <div class="session-meta">
-            <span class="session-tag">Session 2 · 3 hours</span>
-            <span class="session-by">Delivered by: igus</span>
+          <div style="display: flex; gap: 32px; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; min-width: 300px;">
+              <div class="session-meta">
+                <span class="session-tag">Session 2 · 3 hours</span>
+                <span class="session-by">Delivered by: igus</span>
+              </div>
+              <h4>Advanced Motion Systems (igus 4.0)</h4>
+              <ul>
+                <li>Introduction to smart motion plastics</li>
+                <li>Low-cost automation solutions for SMEs and large manufacturers</li>
+                <li>Digital twin and predictive maintenance concepts</li>
+                <li>Hands-on: configuring motion systems</li>
+                <li>Applications in flexible manufacturing environments</li>
+              </ul>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+              <img src="images/igus.jpg" alt="igus Advanced Motion Systems" style="width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center 25%;border-radius:12px;border:1px solid rgba(0,102,51,0.15);box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+            </div>
           </div>
-          <h4>Advanced Motion Systems (igus 4.0)</h4>
-          <ul>
-            <li>Introduction to smart motion plastics</li>
-            <li>Low-cost automation solutions for SMEs and large manufacturers</li>
-            <li>Digital twin and predictive maintenance concepts</li>
-            <li>Hands-on: configuring motion systems</li>
-            <li>Applications in flexible manufacturing environments</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -706,18 +722,25 @@ footer strong { color: #ffffff; }
       </div>
       <div class="day-sessions">
         <div class="session">
-          <div class="session-meta">
-            <span class="session-tag">Session 3 · 3 hours</span>
-            <span class="session-by">Delivered by: Evocon</span>
+          <div style="display: flex; gap: 32px; flex-wrap: wrap; align-items: center;">
+            <div style="flex: 1; min-width: 300px;">
+              <div class="session-meta">
+                <span class="session-tag">Session 3 · 3 hours</span>
+                <span class="session-by">Delivered by: Evocon</span>
+              </div>
+              <h4>IIoT and MES in Manufacturing</h4>
+              <ul>
+                <li>Introduction to Industrial Internet of Things (IIoT)</li>
+                <li>Manufacturing Execution Systems (MES) fundamentals</li>
+                <li>Real-time production monitoring and data collection</li>
+                <li>Overall Equipment Effectiveness (OEE) calculation and improvement</li>
+                <li>Demo: data collection and visualization platform</li>
+              </ul>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+              <img src="images/iiot.jpg" alt="IIoT and MES in Manufacturing" style="width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;border-radius:12px;border:1px solid rgba(0,102,51,0.15);box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+            </div>
           </div>
-          <h4>IIoT and MES in Manufacturing</h4>
-          <ul>
-            <li>Introduction to Industrial Internet of Things (IIoT)</li>
-            <li>Manufacturing Execution Systems (MES) fundamentals</li>
-            <li>Real-time production monitoring and data collection</li>
-            <li>Overall Equipment Effectiveness (OEE) calculation and improvement</li>
-            <li>Demo: data collection and visualization platform</li>
-          </ul>
         </div>
         <div class="session">
           <div class="session-meta">
@@ -777,6 +800,28 @@ footer strong { color: #ffffff; }
       </div>
     </div>
 
+  </div>
+
+  <div class="workshop-card">
+    <div>
+      <p class="section-tag" style="margin-bottom:10px;">Special Workshop</p>
+      <p class="trip-title">Digital Twins & Extended Reality (XR)</p>
+      <p class="trip-sub">A dedicated 3-hour hands-on session exploring the intersection of digital twins and immersive AR/VR/MR environments.</p>
+      <ul class="workshop-list" style="margin-bottom: 24px;">
+        <li>Introduction to Digital Twins and Extended Reality (XR: AR/VR/MR)</li>
+        <li>Connecting real-world systems with immersive environments</li>
+        <li>Key technologies: IoT, simulation, AI, XR visualization</li>
+        <li>Hands-on workshop: create and explore a simple digital twin in an XR environment</li>
+        <li>Q&A and discussion</li>
+      </ul>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <span style="font-size:12px;background:rgba(0,102,51,0.1);border:1px solid rgba(0,102,51,0.25);color:var(--accent);padding:5px 14px;border-radius:100px;">3 Hours</span>
+        <span style="font-size:12px;background:rgba(0,102,51,0.1);border:1px solid rgba(0,102,51,0.25);color:var(--accent);padding:5px 14px;border-radius:100px;">Hands-on</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;">
+      <img src="images/vr.jpeg" alt="Digital Twins and XR" style="width:100%;height:auto;border-radius:12px;border:1px solid rgba(0,102,51,0.15);box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+    </div>
   </div>
 
   <div class="trip-card">
